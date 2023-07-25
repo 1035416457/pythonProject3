@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="046749ea-fe74-4da2-97e0-6c95b51b58f3" name="默认的" comment="测试">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuite/6789.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +35,7 @@
     </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="test001" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,6 +48,13 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/1035416457/pythonProject3" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="2D9b6fw5nVgH1dWe4EyuE2GOihf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -217,9 +222,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.run" />
         <item itemvalue="Python 测试.Cloud.TestBase 的 Unittest" />
         <item itemvalue="Python 测试.a.MyTestCase 的 Unittest" />
+        <item itemvalue="Python.run" />
         <item itemvalue="Python.Read" />
         <item itemvalue="Python.Framework" />
       </list>

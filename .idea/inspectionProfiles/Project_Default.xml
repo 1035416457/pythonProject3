@@ -1,0 +1,59 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="272" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="6">
+            <item index="0" class="java.lang.String" itemvalue="parsel" />
+            <item index="1" class="java.lang.String" itemvalue="pyOpenSSL" />
+            <item index="2" class="java.lang.String" itemvalue="itemloaders" />
+            <item index="3" class="java.lang.String" itemvalue="cryptography" />
+            <item index="4" class="java.lang.String" itemvalue="service_identity" />
+            <item index="5" class="java.lang.String" itemvalue="Twisted" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E303" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyShadowingBuiltinsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredNames">
+        <list>
+          <option value="input" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyStatementEffectInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="redis" />
+          <option value="test.zdh.*" />
+          <option value="str.__add__" />
+          <option value="RedisLibraryKeywords.*" />
+          <option value="pythonProject2.test.CustomSeleniumKeywords.Server" />
+          <option value="redis.commands.json.*" />
+          <option value="str.*" />
+          <option value="pythonProject2.jixian.unitest.*" />
+          <option value="TestCase.login.LoginCase.loginBase" />
+          <option value="run.TestCase" />
+          <option value="TestCase.login.LoginBase.LoginBase" />
+          <option value="TestCase.login.LoginCase.uuid" />
+          <option value="run.Cloud" />
+          <option value="TestCase.Cese_02_User.UserBase" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

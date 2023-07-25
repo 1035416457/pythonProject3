@@ -1,4 +1,0 @@
-username: user-name > .w-full
-password: //input[@type='password']
-input: //div[3]/div/div/input #验证吗
-login_btn: //button[contains(.,'登录')] # 登录按钮 xpath路径

@@ -5,56 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="046749ea-fe74-4da2-97e0-6c95b51b58f3" name="默认的" comment="测试">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythonProject3.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuite/BaiduSearch.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuite/Read.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuite/Test01/Case_01_login.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuite/Test01/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuite/Test02/Case_01_User.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuite/Test02/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuite/Test03/Case_01_ApComUsr.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuite/TestBase.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuite/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuite/bmp.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuite/geckodriver.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuite/login1111.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuite/server.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bmp.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/BaseFramework.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/BasePage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/Cloud.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/Framework.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/HTMLTestRunner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/Logger.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/bmp.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/geckodriver.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/server.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/function.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/d.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/手册/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/手册/img_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/手册/img_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/手册/img_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/手册/img_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/手册/img_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/手册/img_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/手册/img_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/ApComUsrBase.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/LoginBase.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/UserBase.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_element/login.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +59,6 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="所有位置" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/TestCase/2" />
@@ -314,7 +266,7 @@
       <workItem from="1690190503771" duration="884000" />
       <workItem from="1690191656923" duration="3120000" />
       <workItem from="1690250652457" duration="1460000" />
-      <workItem from="1690252142454" duration="305000" />
+      <workItem from="1690252142454" duration="1292000" />
     </task>
     <task id="LOCAL-00001" summary="默认的">
       <created>1690189878281</created>
@@ -344,7 +296,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690252195925</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="日">
+      <created>1690252706656</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690252706656</updated>
+    </task>
+    <task id="LOCAL-00006" summary="日">
+      <created>1690252782672</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690252782672</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,7 +374,8 @@
     <MESSAGE value="默认的" />
     <MESSAGE value="测试" />
     <MESSAGE value="Revert &quot;默认的&quot;&#10;&#10;This reverts commit e227fd07" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;默认的&quot;&#10;&#10;This reverts commit e227fd07" />
+    <MESSAGE value="日" />
+    <option name="LAST_COMMIT_MESSAGE" value="日" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

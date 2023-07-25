@@ -1,0 +1,42 @@
+[INFO  2023-07-20T15:33:31,340 net.lightbody.bmp.proxy.Main] (main) Starting BrowserMob Proxy version 2.1.4 
+[INFO  2023-07-20T15:33:31,390 org.eclipse.jetty.util.log] (main) jetty-7.x.y-SNAPSHOT 
+[INFO  2023-07-20T15:33:32,061 org.eclipse.jetty.util.log] (main) started o.e.j.s.ServletContextHandler{/,null} 
+[INFO  2023-07-20T15:33:32,250 org.eclipse.jetty.util.log] (main) Started SelectChannelConnector@0.0.0.0:8080 
+[INFO  2023-07-20T15:33:34,328 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp530696881-21) Starting proxy at address: 0.0.0.0/0.0.0.0:8081 
+[INFO  2023-07-20T15:33:34,376 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp530696881-21) Proxy listening with TCP transport 
+[INFO  2023-07-20T15:33:35,710 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp530696881-21) Proxy started at address: /0:0:0:0:0:0:0:0:8081 
+[ERROR 2023-07-20T15:33:39,891 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-0) (AWAITING_INITIAL) [id: 0x53c8f2bb, L:/127.0.0.1:8081 - R:/127.0.0.1:59080]: Caught an exception on ClientToProxyConnection io.netty.handler.codec.DecoderException: javax.net.ssl.SSLException: Received fatal alert: unknown_ca
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:442) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:248) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:129) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:651) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [browsermob-dist-2.1.4.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_191]
+Caused by: javax.net.ssl.SSLException: Received fatal alert: unknown_ca
+	at sun.security.ssl.Alerts.getSSLException(Unknown Source) ~[?:1.8.0_191]
+	at sun.security.ssl.SSLEngineImpl.fatal(Unknown Source) ~[?:1.8.0_191]
+	at sun.security.ssl.SSLEngineImpl.fatal(Unknown Source) ~[?:1.8.0_191]
+	at sun.security.ssl.SSLEngineImpl.recvAlert(Unknown Source) ~[?:1.8.0_191]
+	at sun.security.ssl.SSLEngineImpl.readRecord(Unknown Source) ~[?:1.8.0_191]
+	at sun.security.ssl.SSLEngineImpl.readNetRecord(Unknown Source) ~[?:1.8.0_191]
+	at sun.security.ssl.SSLEngineImpl.unwrap(Unknown Source) ~[?:1.8.0_191]
+	at javax.net.ssl.SSLEngine.unwrap(Unknown Source) ~[?:1.8.0_191]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1097) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:968) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:902) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:411) ~[browsermob-dist-2.1.4.jar:?]
+	... 15 more
+
+[WARN  2023-07-20T15:33:41,229 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-0-ProxyToServerWorker-1) No content type specified in response from /v1/tiles. Content will be treated as application/octet-stream 
+[WARN  2023-07-20T15:33:57,343 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-0-ProxyToServerWorker-0) Cannot decode unsupported content encoding type br 
+[WARN  2023-07-20T15:33:57,343 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-0-ProxyToServerWorker-0) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 

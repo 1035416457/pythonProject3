@@ -146,14 +146,20 @@ class BasePage( object ):
     # move_to_element( to_element ) ：鼠标移动到某个元素
     #
     #  move_to_element_with_offset( to_element, xoffset, yoffset ) ：移动到距某个元素（左上角坐标）多少距离的位置
-
+    #点击按钮
     def move_by_offset(self, x, y):
         try:
             ActionChains( self.driver).move_by_offset( x, y ).click().perform()
         except Exception as e:
              # logger.error( "Failed to click move_element with %s" % e )
             self.get_windows_img()
-
+    #输入
+    def move_by_offset_keys(self, x, y,text):
+        try:
+            ActionChains( self.driver).move_by_offset( x, y ).click().send_keys(text).perform()
+        except Exception as e:
+             # logger.error( "Failed to click move_element with %s" % e )
+            self.get_windows_img()
     def move_to_element_with_offset(self,selector, x, y):
         el = self.find_element( selector )
         try:

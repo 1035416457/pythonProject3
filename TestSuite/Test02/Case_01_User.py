@@ -97,6 +97,11 @@ class User(TestBase):
             input = UserBase( self.driver )
             #input.sleep( 3 )
             input.move_by_offset(320, 165)
+            input.move_by_offset_keys(1488,-65,"testaccount001")#输入用户名
+            input.move_by_offset_keys(0,50,"测试账号001")
+            input.move_by_offset_keys( 0, 540, "admin123" )
+            input.move_by_offset(310, 220 )#点击保存
+
             #input.click()
             #input.click_User()
             #input.click_user_add()

@@ -46,7 +46,6 @@ class BasePage( object ):
         #logger.info( "Click back on current page." )
 
         # 显示等待
-
     def wait(self, loc, seconds):
         try:
             wait_ = WebDriverWait( self.driver, seconds )
@@ -106,8 +105,7 @@ class BasePage( object ):
             logger.error( "Failed to clear in input box with %s" % e )
             self.get_windows_img()
 
-        # 点击元素
-
+    # 点击元素
     def click(self, selector):
         el = self.find_element( selector )
         try:
@@ -117,8 +115,7 @@ class BasePage( object ):
 
            logger.error( "Failed to click the element with %s" % e )
 
-        # 鼠标事件（左键点击）
-
+    # 鼠标双击
     def double_click(self, selector):
         '''双击事件'''
         el = self.find_element( selector )
@@ -137,21 +134,33 @@ class BasePage( object ):
     #     """
     #     el = self.driver.find_element(name, value)
     #     try:
-    #         ActionChains(self.driver).drag_and_drop_by_offset(el, xoffset, yoffset).perform()
+        #         ActionChains(self.driver).drag_and_drop_by_offset(el, xoffset, yoffset).perform()
     #         # logger.info( "The element \\'%s\\' was move_by_offset" % el.text )
     #     except NameError as e:
     #
     #         logger.error( "Failed to move_by_offset the element with %s" % e )
     #
     #     # 鼠标移动到某个坐标
+    # move_by_offset( xoffset, yoffset ) ：鼠标从当前位置移动到某个坐标（需要获取到目标位置的位置坐标）
+    #
+    # move_to_element( to_element ) ：鼠标移动到某个元素
+    #
+    #  move_to_element_with_offset( to_element, xoffset, yoffset ) ：移动到距某个元素（左上角坐标）多少距离的位置
 
     def move_by_offset(self, x, y):
         try:
-            ActionChains( self.driver ).move_by_offset( x, y ).perform()
+            ActionChains( self.driver).move_by_offset( x, y ).click().perform()
         except Exception as e:
              # logger.error( "Failed to click move_element with %s" % e )
             self.get_windows_img()
 
+    def move_to_element_with_offset(self,selector, x, y):
+        el = self.find_element( selector )
+        try:
+            ActionChains( self.driver ).move_by_offset( el,x, y ).click().perform()
+        except Exception as e:
+            # logger.error( "Failed to click move_element with %s" % e )
+            self.get_windows_img()
         # 强制等待
 
     def switch_frame(self, loc):
@@ -161,7 +170,7 @@ class BasePage( object ):
         :return: 定位到的元素
         """
         try:
-            return self.driver.switch_to_frame(loc)
+            return self.driver.switch_to_frame( loc )
         except NoSuchFrameException as msg:
             logger.error("查找iframe异常-> {0}".format(msg))
 

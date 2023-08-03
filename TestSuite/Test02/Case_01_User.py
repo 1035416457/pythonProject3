@@ -54,21 +54,8 @@ class User(TestBase):
     def test02_Application(self):
         """
         """
-        url = 'https://www.nintendo.com/'
-        new_url = 'https://www.rockstargames.com/'
-        driver = webdriver.Chrome( desired_capabilities=caps, executable_path=r'/usr/local/bin/chromedriver' )
-        driver.get( url )
-
-        # Do some stuff
-        getMeGames()
-
-        # This is not working
-        driver.get( new_url )
-
-        # Do more Stuff
-        getMeVideos()
         input = UserBase(self.driver)
-        input.move_by_offset(0,926)
+        #input.move_by_offset(320,165)
         input.sleep(10)
         input.click_BackGround()
         try:
@@ -82,6 +69,7 @@ class User(TestBase):
             """
             """
             input = UserBase( self.driver )
+            input.sleep( 3 )
             # input.move_by_offset(0,100)
             input.click_Ant_Menu()
             try:
@@ -107,9 +95,11 @@ class User(TestBase):
             """
             """
             input = UserBase( self.driver )
-            input.sleep( 3 )
-            # input.move_by_offset(0,100)
-            input.click_user_add()
+            #input.sleep( 3 )
+            input.move_by_offset(320, 165)
+            #input.click()
+            #input.click_User()
+            #input.click_user_add()
             try:
                 assert ("http://192.168.5.236/lzos/iframe?id=1641275680475848704&isShowMenu=1" and self.driver.current_url)
                 input.get_windows_img()

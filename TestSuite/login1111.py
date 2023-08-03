@@ -3,6 +3,7 @@ import time
 import redis
 from browsermobproxy import Server
 from selenium import webdriver
+from selenium.webdriver import ActionChains
 
 from config.function import getConfig
 uuid = ''
@@ -84,7 +85,7 @@ for entry in result['log']['entries']:
 print(uuid)
 
 # 获取redis配置参数
-ip = "192.168.5.214"
+ip = "192.168.5.236"
 port = "6379"
 password = '1@#4'
 # return uuid
@@ -93,24 +94,32 @@ r = redis.StrictRedis(host=ip, port=port, password=password, decode_responses=Tr
 #后厂造
 #captcha_codes = "captcha_codes:{}".format(uuid)
 #乐造
-captcha_codes = "mp:validateCode:{}".format(uuid)
-#answer = r.get(captcha_codes)[1:-1]
-answer = r.get(captcha_codes)
+captcha_codes = "lzos:validateCode:{}".format( uuid )
+answer = r.get( captcha_codes )[1:-1]  # 去掉“
+# answer = r.get( captcha_codes )  #不去“”
 print(answer)
-if answer != "":
-    print("获取验证码成功")
-else:
-    print("获取验证码失败")
-time.sleep(3)
+# if answer != "":
+#     print("获取验证码成功")
+# else:
+#     print("获取验证码失败")
+# time.sleep(3)
 #乐造登录
-driver.find_element_by_class_name('user-name > .w-full').send_keys('jixian')
-driver.find_element_by_xpath("//input[@type='password']").send_keys('Admin123')
-driver.find_element_by_xpath('(//input)[4]').send_keys(answer)
+driver.find_element_by_class_name('user-name > .w-full').send_keys('nancaladmin')
+driver.find_element_by_xpath("//input[@type='password']").send_keys('admin123')
+driver.find_element_by_class_name('verification-code > input').send_keys(answer)
 driver.find_element_by_xpath("//button[contains(.,'登录')]").click()
 time.sleep(3)
-driver.set_window_size(1920,1080)
+#driver.set_window_size(1920,1080)
+#后台给
+driver.find_element_by_xpath("//footer/div/div/div/div[3]").click()
+time.sleep(2)
+driver.find_element_by_xpath("//li[2]/div/span/span[2]").click()
+time.sleep(2)
+driver.find_element_by_xpath("//span[contains(., '用户管理')]").click()
+time.sleep(2)
+ActionChains(driver).move_by_offset(320, 165).click().perform() # 鼠标左键点击， 200为x坐标， 100为y坐标
 #BOM
-driver.find_element_by_class_name('application_list_wrap:nth-child(5) > .list').click()
+# driver.find_element_by_class_name('application_list_wrap:nth-child(5) > .list').click()
 #数据字典
 #driver.find_element_by_class_name('application_list_wrap:nth-child(4) .text').click()
 time.sleep(3)
@@ -119,14 +128,14 @@ time.sleep(3)
 #定位iframe
 #driver.switch_to_frame(0)
 
-driver.switch_to_frame(driver.find_element_by_xpath('/html/body/div[1]/div/div/div[Test03]/div[Test03]/div/div/iframe'))
-driver.find_element_by_class_name('bom-new-Item').click()
+# driver.switch_to_frame(driver.find_element_by_xpath('/html/body/div[1]/div/div/div[Test03]/div[Test03]/div/div/iframe'))
+# driver.find_element_by_class_name('bom-new-Item').click()
 #driver.switch_to_frame(0)
 
 #driver.find_elements_by_css_selector('ant-btn:nth-child(1)')
 
 #后厂造登录
-driver.find_element_by_class_name('co-mobile').send_keys('18500810918')#输入用户名
-driver.find_element_by_xpath("//input[@type='password']").send_keys('admin123')#输入密码
-driver.find_element_by_class_name('pwd-code > .code').send_keys(answer)#输入验证码
-driver.find_element_by_class_name('el-button').click()#点击登录
+# driver.find_element_by_class_name('co-mobile').send_keys('18500810918')#输入用户名
+# driver.find_element_by_xpath("//input[@type='password']").send_keys('admin123')#输入密码
+# driver.find_element_by_class_name('pwd-code > .code').send_keys(answer)#输入验证码
+# driver.find_element_by_class_name('el-button').click()#点击登录
